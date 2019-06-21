@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+
   <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -19,12 +24,14 @@
 
 <div class="container">
   <header>
-    <img src="images/logo.svg" alt="Fylo logo" class="logo">
+    <a href="#">
+      <img src="images/logo.svg" alt="Fylo logo" class="logo">
+    </a>
     <nav class="header-about">
       <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
   </nav>
 </header>
@@ -41,14 +48,14 @@
         family, and co-workers.
       </p>
       <form action="" class="demo-service-form">
-         <input type="email" id="email">
-         <button>Get Started</button>
+         <input class="demo-service-form-input" type="email" id="email" placeholder="Enter your email&hellip;">
+         <button class="demo-service-form-btn">Get Started</button>
       </form>
     </article>
     <img src="images/illustration-1.svg" alt="" class="demo-service-img">
   </section>
 
-  <section class="demo">
+  <section class="demo even">
     <article class="demo-service">
       <h1 class="demo-service-title">
         Stay productive, wherever you are
@@ -64,50 +71,53 @@
       <a href="" class="demo-service-link">See how Fylo works</a>
   
       <blockquote class="demo-service-testimonial">
-          Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.
+         <p> Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.</p>
       <img src="images/avatar-testimonial.jpg" alt="" class="demo-service-testimonial-img">
       <cite>
-          Kyle Burton
-          Founder & CEO, Huddle
+          Kyle Burton<br>
+          <span>Founder & CEO, Huddle</span> 
       </cite>
       </blockquote>
-      <img src="images/illustration-2.svg" alt="" class="demo-service-img">
     </article>
-  </section>
+      <img src="images/illustration-2.svg" alt="" class="demo-service-img">
+    </section>
 
   <section class="sign-up">
+    <div class="sign-up-promo">
       <h1 class="sing-up-title">Get early access today</h1>
       <p class="sign-up-content">
         It only takes a minute to sign up and our free starter tier is extremely generous. 
         If you have any questions, our support team would be happy to help you.
       </p>
+    </div>
       <form action="" class="demo-service-form">
-          <input type="email" id="email">
-          <button> Get Started For Free</button>
+        <input type="email" id="email" class="demo-service-form-input" placeholder="email@example.com">
+        <button class="demo-service-form-btn"> Get Started For Free</button>
        </form>
     </section>
   </main>
 
   <footer>
-    <img src="images/logo.svg" alt="Fylo logo" class="logo">
+    <div class="logoWhite"></div>
+    <!-- <img src="images/logo.svg" alt="Fylo logo" class="logoWhite"> -->
     <nav class="footer-navbar">
       <address class="footer-navbar-address" >
-        <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a><br>
-        <a href="mailto:example@fylo.com">example@fylo.com</a>
+        <a class="phone" href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a><br>
+        <a class="email" href="mailto:example@fylo.com">example@fylo.com</a>
       </address>
 
       <ul class="footer-main-nav">
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
       
       <ul class="footer-navbar-contacts">
-        <li>Contact Us</li>
-        <li>Terms</li>
-        <li>Privacy</li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
       </ul>
 
       <ul class="footer-socials">
